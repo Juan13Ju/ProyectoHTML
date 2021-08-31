@@ -10,6 +10,10 @@
         dl {
             border: 1px solid black;
         }
+        html{
+            scroll-behavior: smooth;
+            scroll-padding-top: 15px;
+        }
     </style>
     <title>Animes</title>
 </head>
@@ -22,10 +26,11 @@
     <nav>
         <ul>
 
+            <li><a href="index.html">Pagina Principal</a></li>
             <li><a href="Animes.html">Animes</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">Pasatiempos</a></li>
-            <li><a href="">Proyectos y Experiencia</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="pasatiempos.html">Pasatiempos</a></li>
+            <li><a href="proyectos.html">Proyectos y Experiencia</a></li>
         </ul>
     </nav>
 
@@ -33,8 +38,14 @@
 
         <h1>Animes que me gustan</h1>
         <p>En esta pagina podras ver mis animes favoritos sin algun orden en especifico</p>
+        <ul>
+            <li><a href="#aot">Attak on titan</a></li>
+            <li><a href="#jujutsu">Jujutsu kaisen</a></li>
+            <li><a href="#opm">One Punch Man</a></li>
+        </ul>
+
         <dl>
-            <dt><strong>Attack on Titan</strong></dt>
+            <dt id="aot"><strong>Attack on Titan</strong></dt>
             <dd>Me gusta porque tiene mucha accion y misterio</dd>
             <dd><iframe src="https://youtube.com/embed/Vdf9A1GRHbg" width="600px" height="400px"></iframe></dd>
             <dd>O si prefieres el manga lo puedes ver <a href="https://readshingekinokyojin.com/"
@@ -42,19 +53,34 @@
 
             <hr>
 
-            <dt><strong>Jujutsu kaisen</strong></dt>
+            <dt id="jujutsu"><strong>Jujutsu kaisen</strong></dt>
             <dd>Tiene peleas bien chidas xd</dd>
             <dd><iframe src="https://youtube.com/embed/zyeZgVTtqec" width="600px" height="400px"></iframe></dd>
             <dd>Igual puedes leer el manga <a href="https://jujustukaisen.com/" target="_blank">aqui</a></dd>
 
             <hr>
 
-            <dt><strong>One Punch Man</strong></dt>
+            <dt id="opm"><strong>One Punch Man</strong></dt>
             <dd>Es de un wey que le gana a todos de un golpe y esta chistosa xd</dd>
             <dd><iframe src="https://www.youtube.com/embed/2JAElThbKrI" width="600px" height="400px"></iframe></dd>
             <dd>Igual puedes leer el manga <a href="https://readonepunchman.online/" target="_blank">aqui</a></dd>
         </dl>
 
+        <h3>¿Cual de estos 3 animes te gustaria ver?</h3>
+        <form>
+            <input type="checkbox" name="" id="aot" value="aot">
+            <label for="aotCheck">Attack on Titan </label><br>
+
+            <input type="checkbox" name="" id="jujutsuCheck" value="jujutsu">
+            <label for="jujutsuCheck">Jujutsu Kaisen </label><br>
+
+            <input type="checkbox" name="" id="opmCheck" value="opm">
+            <label for="opmCheck">One Punch Man </label><br>
+            
+            <input type="button" value="Submit">
+        </form>
+
+        <br><br>
         <a href="index.html">
             <button>Pagina principal</button>
         </a>
@@ -66,16 +92,16 @@
                 <ul>
         
                     <li><a href="Animes.html">Animes</a></li>
-                    <li><a href="">Contacto</a></li>
-                    <li><a href="">Pasatiempos</a></li>
-                    <li><a href="">Proyectos y Experiencia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                    <li><a href="proyectos.html">Proyectos y Experiencia</a></li>
                 </ul>
             </nav>
         </div>
         <div>
-            <strong>@CompañiaChida 2021</strong> No me copies plox
+            <strong>@CompañiaChida 2021</strong> No me copies plox.
         </div>
     </footer>
-</body>
+</body> 
 
 </html>
